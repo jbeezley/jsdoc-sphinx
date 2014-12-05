@@ -1,0 +1,25 @@
+{
+  "name": "jsdoc-sphinx-template",
+  "version": "0.0.18",
+  "description": "JSDoc3 template that generates reStructuredText for Sphinx",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jbeezley/jsdoc-sphinx-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jbeezley/jsdoc-sphinx-template/issues"
+  },
+  "main": "./template/publish.js",
+  "dependencies": {
+    "jsdoc": "=3.3.0-alpha10",
+    "underscore": "~1.6"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-jscs": "^1.0.0",
+    "load-grunt-tasks": "^1.0.0"
+  }
+}
