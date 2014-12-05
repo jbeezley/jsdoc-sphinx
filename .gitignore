@@ -1,0 +1,5 @@
+.DS_Store
+node_modules
+docs/html
+docs/rst
+.*.swp
