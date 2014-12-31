@@ -103,6 +103,9 @@ describe('render', function () {
             it('multiline', function () {
                 render('oneline', 'A line\nAnother line.').should.equal('A line Another line.');
             });
+            it('multiline2', function () {
+                render('oneline', 'A line\nAnother line.\n\nTwo').should.equal('A line Another line.  Two');
+            });
         });
 
         describe('arglist', function () {

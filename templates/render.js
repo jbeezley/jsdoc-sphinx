@@ -27,7 +27,7 @@ module.exports = function (type, data, indent) {
             break;
 
         case 'oneline':
-            output = data.replace('\n', ' ');
+            output = data.replace(/\n/mg, ' ');
             break;
 
         case 'arglist':
