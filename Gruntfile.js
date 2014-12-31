@@ -4,7 +4,8 @@ module.exports = function (grunt) {
     require('load-grunt-tasks')(grunt);
 
     var files = [
-        'templates/render.js'
+        'templates/render.js',
+        'lib/tree.js'
     ];
 
     grunt.initConfig({
@@ -17,15 +18,6 @@ module.exports = function (grunt) {
                 config: '.jscsrc'
             }
 
-        },
-        jscoverage: {
-            render: {
-                expand: true,
-                cwd: 'templates/',
-                src: 'render.js',
-                dest: 'cov/',
-                ext: '.js'
-            }
         },
         mochacov: {
             html: {
@@ -50,7 +42,7 @@ module.exports = function (grunt) {
         }
     });
 
-    grunt.registerTask('test', ['jshint', 'jscs', 'jscoverage', 'mochacov:test']);
+    grunt.registerTask('test', ['jshint', 'jscs', 'mochacov:test']);
     grunt.registerTask('html', ['mochacov:html']);
     grunt.registerTask('travis', ['test', 'mochacov:cov']);
     grunt.registerTask('default', ['test']);
