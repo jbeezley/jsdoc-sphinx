@@ -1,0 +1,12 @@
+<%= data.name %>
+<%= data.underline %>
+
+.. <%= domain %>:class:: <%= data.name %>(<%= render('arglist', data.parameters) %>)
+
+<%= render('block', data.description, '    ') %>
+
+<%= render('parameter', data.parameters, '    ') %>
+
+<%= render('attribute', data.attributes, '    ') %>
+
+<%= render('function', data.functions, '     ') %>

@@ -1,0 +1,7 @@
+.. <%= domain %>:<%= data.type %>:: <%= data.name %>(<%= render('arglist', data.parameters) %>)
+
+<%= render('block', data.description, '    ') %>
+
+<%= render('parameter', data.parameters, '    ') %>
+
+<%= render('return', data.return, '    ') %>
