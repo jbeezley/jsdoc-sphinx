@@ -1,8 +1,7 @@
 /* global describe, it */
 
 require('should');
-var dir = process.env.COV_PATH || 'templates';
-var render = require('../' + dir + '/render');
+var render = require('../templates/render');
 
 describe('render', function () {
     describe('basic', function () {
