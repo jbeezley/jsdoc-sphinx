@@ -32,5 +32,8 @@
         "templates/render.js"
       ]
     }
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/grunt travis"
   }
 }
